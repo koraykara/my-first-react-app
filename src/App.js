@@ -1,24 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
+import MyComponent from './components/MyComponent';
+import MyDataComponent from './components/MyDataComponent';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload ozgur.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MyComponent name = "Koray Kara">this is my childrennnnn</MyComponent>
+      <MyComponent name = "hasan">this is your childrennnnn</MyComponent>
+      <MyDataComponent></MyDataComponent>
+
     </div>
   );
 }
